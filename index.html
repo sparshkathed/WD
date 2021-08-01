@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="overlay" id="overlay">
+        <h3>Searching Now</h3>
+    </div>
+    <div class="hero-bg">
+        <section class="top">
+            <header>
+            <a href="#">Yummy.eats</a>
+            </header>
+            <h1><span>The Healty </span>Eating Experience</h1>
+
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat magni iure ratione quo dignissimos officia laboriosam. Aliquid voluptates cumque, at rem veritatis voluptate fugiat repellat ullam in, reiciendis repudiandae facilis?
+            </p>
+            
+            <div class="form-container">
+                <form action="#">
+                    <div class="form-left">
+                        <label for="city">Enter your city:</label>
+                        <input type="text" name="city" id="city">
+                        <p>Example: San Diego</p>
+                    </div>
+
+                    <input type="button" value="Find Food" id="cta-btn">
+                </form>
+            </div>
+
+
+
+        </section>
+
+    </div>
+    
+    <section class="authentic">
+        <div class="right-col">
+            <h2>Authentic. Wholesome</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam necessitatibus quo culpa voluptatem laboriosam odio dolore nesciunt sed possimus atque?</p>
+        </div>
+        <img src="images/food.jpg" alt="Picture">
+    </section>
+    <script>
+        let btn=document.getElementById('cta-btn');
+        let overlay=document.getElementById('overlay');
+        btn.addEventListener('click', () => {
+                overlay.style.display='grid';
+                overlay.classlist.add('animate-overlay')
+        })
+    </script>
+</body>
+</html>
